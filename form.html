@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голумеев_Игорь-форма</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header class="clearfix">
+            <a id="logo" href="index.html"><span class="pink">Космос</span> <i>Тур</i></a>
+            <nav id="mainnav">
+                <ul>
+                    <li><a href="uslugi.html">Услуги</a></li>
+                    <li><a href="aboutus.html">О нас</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="form-centr">
+    <form id="contact-form" action="">
+        <div class="form_item">
+            <label for="topic">Тема</label><br>
+            <select name="topic" id="topic">
+                <option value="1">Заказать полёт</option>
+                <option value="2">Оставить отзыв</option>
+                <option value="3">Предложить сотрудничество</option>
+                <option value="4">Другое</option>
+            </select>
+        </div>
+        <div class="form_item">
+            <label for="name">Имя</label><br>
+            <input name="name" id="name" type="text" placeholder="Введите имя" required>
+        </div>
+        <div class="form_item">
+            <label for="email">E-mail</label><br>
+            <input name="email" id="email" type="email" placeholder="example@mail.ru" required>
+        </div>
+        <div class="form_item">
+            <label for="phone">Телефон</label><br>
+            <input name="phone" id="phone" type="tel" placeholder="+7(999)123-45-67" required>
+        </div>
+        <div class="form_item">
+            <label for="date">Дата полёта</label><br>
+            <input name="date" id="date" type="date" required>
+        </div>
+        <div class="form_item">
+            <label for="passengers">Количество пассажиров</label><br>
+            <input name="passengers" id="passengers" type="number" min="1" max="6" value="1" required>
+        </div>
+        <div class="form_item">
+            <label for="site">Сайт компании (если есть)</label><br>
+            <input name="site" id="site" type="url" placeholder="https://example.com">
+        </div>
+        <div class="form_item">
+            <label for="message">Текст сообщения</label><br>
+            <textarea name="message" id="message" placeholder="Введите сообщение" required></textarea>
+        </div>
+        <div class="form_item">
+            <input type="submit" value="Отправить">
+        </div>
+    </form>
+</main>
+    </div>
+    <footer>
+        <p class="footer_block"><a href="form.html" class="footer_link">Связаться с нами &#9650;</a></p>
+        <p class="footer_block">&copy; Космос тур</p>
+        <div class="footer_icons">
+            <a href="" target="_blank">
+                <img class="footer_img" src="img/icons/mailru.png" alt="kartinka">
+            </a>
+            <a href="" target="_blank">
+                <img class="footer_img" src="img/icons/ok.png" alt="kartinka">
+            </a>
+            <a href="" target="_blank">
+                <img class="footer_img" src="img/icons/vk.png" alt="kartinka">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
